@@ -18,8 +18,8 @@ import { useState } from "react";
 
 const HeroSection = () => {
   return (
-    <div className="bg-red-100 py-10">
-      <Container>
+    <div className="bg-red-100 py-10 ">
+      <div className="max-w-5xl mx-auto">
         <Box>
           {/* text here */}
           <Box
@@ -45,7 +45,7 @@ const HeroSection = () => {
           <Box
             sx={{
               margin: "0 auto",
-              backgroundColor: "red",
+              backgroundColor: "green",
               padding: "2px 3px",
               marginTop: "40px",
             }}
@@ -101,7 +101,7 @@ const HeroSection = () => {
           {/* main box close */}
         </Box>
         {/*  */}
-      </Container>
+      </div>
     </div>
   );
 };
