@@ -24,6 +24,7 @@ export const generateStaticParams = async () => {
 };
 
 const SingleProductPage = async ({ params }: TParams) => {
+  console.log(params.productId);
   const res = await fetch(
     `https://baby-care-server.vercel.app/products/${params.productId}`,
     {
@@ -37,7 +38,7 @@ const SingleProductPage = async ({ params }: TParams) => {
       <Container>
         <div className="mt-20">
           {/* 1st part iamge and title */}
-          <div className="grid grid-flow-col md:grid-cols-2  gap-10">
+          <div className="grid grid-flow-col md:grid-cols-2  gap-10 items-center ">
             {/* images */}
             <div>
               <Image
